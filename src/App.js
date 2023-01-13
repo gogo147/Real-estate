@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import GlobalStyle from "./globalStyle";
+import { SliderData } from './data/SliderData';
 import Hero from "./components/Hero";
 
 function App() {
@@ -7,9 +8,10 @@ function App() {
     <>
       <GlobalStyle />
       <Navbar />
-      <Hero />
+      <Hero slides={SliderData} />
     </>
   );
 }
 
 export default App;
+ 
