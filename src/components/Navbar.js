@@ -2,7 +2,6 @@ import React from 'react';
 import styled, { css } from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 import { MenuData } from '../data/MenuData.js';
-import { Button } from './Button.js';
 import {FaBars} from 'react-icons/fa';
 
 const Nav = styled.nav`
@@ -17,6 +16,7 @@ const Nav = styled.nav`
 
 const NavLink = css`
     color: #fff;
+    font-size: 1.3rem;
     display: flex;
     align-items: center;
     padding: 0 1rem;
@@ -75,9 +75,7 @@ const Navbar = ({ toggle }) => {
                 </NavMenuLinks>
             )) }
         </NavMenu>
-        <NavBtn>
-            <Button to='/contact' primary={true}>Contact Us</Button>
-        </NavBtn>
+        
     </Nav>
   )
 }

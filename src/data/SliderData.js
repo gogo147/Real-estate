@@ -5,32 +5,32 @@ import ImageFour from '../images/4.jpg'
 
 export const SliderData = [
     {
-        title: 'hej',
-        price: '4kr',
+        title: 'Los Angeles',
+        price: '1 500 000 kr',
         path: '/home',
         label: 'View Home',
         image: ImageOne,
         alt: 'House'
     },
     {
-        title: 'heej',
-        price: '40kr',
+        title: 'Marbella',
+        price: '2 000 000 kr',
         path: '/home',
         label: 'View Home',
         image: ImageTwo,
         alt: 'House'
     },
     {
-        title: 'heeej',
-        price: '400kr',
+        title: 'Texas',
+        price: '600 000 kr',
         path: '/home',
         label: 'View Home',
         image: ImageThree,
         alt: 'House'
     },
     {
-        title: 'heeeej',
-        price: '4000kr',
+        title: 'Maldiverna',
+        price: '800 000 kr',
         path: '/home',
         label: 'View Home',
         image: ImageFour,
