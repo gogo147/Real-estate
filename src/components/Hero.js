@@ -127,7 +127,7 @@ const Hero = ({ slides }) => {
     const length = slides.length
     const timeout = useRef(null);
 
-    /*useEffect(() => {
+    useEffect(() => {
         const nextSlide = () => {
             setCurrent(current => (current === length -1 ? 0 : current + 1))
         }
@@ -139,7 +139,7 @@ const Hero = ({ slides }) => {
                 clearTimeout(timeout.current);
             }
         }
-    }, [current, length])*/
+    }, [current, length])
 
     const nextSlide = () => {
         if (timeout.current) {
