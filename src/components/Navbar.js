@@ -27,7 +27,6 @@ const NavLink = css`
 
 const MenuBars = styled(FaBars)`
     display: none;
-
     @media screen and (max-width: 768px) {
         display: block;
         height: 30px;
@@ -37,6 +36,8 @@ const MenuBars = styled(FaBars)`
         top: 0; 
         right: 0;
         transform: translate(-50%, 25%);
+        color: #fff;
+        opacity: 0.9;
     }
 `;
 
@@ -44,7 +45,6 @@ const NavMenu = styled.div`
     display: flex;
     align-items: center;
     margin-right: -48px;
-
     @media screen and (max-width: 768px) {
         display: none;
     }

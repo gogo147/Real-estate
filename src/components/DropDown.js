@@ -1,7 +1,7 @@
+
 import React from 'react';
 import styled from 'styled-components';
 import { MenuData } from '../data/MenuData';
-import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
 
@@ -10,7 +10,7 @@ const DropDownContainer = styled.div`
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: #cd853f;
+    background: linear-gradient(#e66465, #9198e5);
     display: grid;
     align-items: center;
     top: 0;
@@ -31,7 +31,8 @@ const Icon = styled.div`
 `;
 
 const CloseIcon = styled(FaTimes)`
-  color: #000d1a;
+  color: #fff;
+  opacity: 0.9;
 `;
 
 const DropdownWrapper = styled.div``;
@@ -42,7 +43,6 @@ const DropdownMenu = styled.div`
   grid-template-rows: repeat(4, 80px);
   text-align: center;
   margin-bottom: 4rem;
-
   @media screen and (max-width: 480px) {
     grid-template-rows: repeat(4, 60px);
   }
@@ -57,19 +57,12 @@ const DropdownLink = styled(Link)`
   padding-bottom: 2rem;
   font-size: 2rem;
   list-style: none;
-  color: #fff;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-
+  opacity: 0.7;
   &:hover{
-    color: #000d1a;
+    opacity: 1;
   }
-`;
-
-
-const BtnWrap = styled.div`
-  display: flex;
-  justify-content: center;
 `;
 
 const DropDown = ({ isOpen, toggle }) => {
@@ -86,11 +79,6 @@ const DropDown = ({ isOpen, toggle }) => {
               </DropdownLink>
             ))}
           </DropdownMenu>
-          <BtnWrap>
-            <Button primary='true' round='true' big='true' to='/contact'>
-              Contact Us
-            </Button>
-          </BtnWrap>
         </DropdownWrapper>
       
     </DropDownContainer>
