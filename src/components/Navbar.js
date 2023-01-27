@@ -54,16 +54,6 @@ const NavMenuLinks = styled(Link)`
     ${NavLink}
 `;
 
-const NavBtn = styled.div`
-    display: flex;
-    align-items: center;
-    margin-right: 24px;
-    
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
-`
-
 const Navbar = ({ toggle }) => {
   return (
     <Nav>

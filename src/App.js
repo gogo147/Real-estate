@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import DropDown from "./components/DropDown";
 import InfoSection from "./components/InfoSection";
 import { InfoData } from "./data/InfoData";
+import LoginForm from "./components/LoginForm";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,6 +22,7 @@ function App() {
       <DropDown isOpen={isOpen} toggle={toggle} />
       <Hero slides={SliderData} />
       <InfoSection {...InfoData}/>
+      <LoginForm />
     </>
   );
 }
