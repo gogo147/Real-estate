@@ -5,7 +5,7 @@ import { SliderData } from './data/SliderData';
 import Hero from "./components/Hero";
 import DropDown from "./components/DropDown";
 import InfoSection from "./components/InfoSection";
-import { InfoData } from "./data/InfoData";
+import { InfoData, InfoDataTwo } from "./data/InfoData";
 import LoginForm from "./components/LoginForm";
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
       <DropDown isOpen={isOpen} toggle={toggle} />
       <Hero slides={SliderData} />
       <InfoSection {...InfoData}/>
+      <InfoSection {...InfoDataTwo}/>
       <LoginForm />
     </>
   );
